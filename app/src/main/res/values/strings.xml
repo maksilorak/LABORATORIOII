@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">LABORATORIO II</string>
+    <string name="Usuario">Usuario</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="repetir_contrasena">Confirma Contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="principal">Principal</string>
+    <string name="cerrar_sesion">Cerrar Sesión</string>
+    <string name="perfil">Mi Perfil</string>
+    <string name="mail">Email</string>
+    <string name="Correo">Email</string>
+</resources>
