@@ -68,18 +68,39 @@ public class LogginActivity extends AppCompatActivity {
                 IR_A_MAIN.putExtra("contrasena",PASSWORD);
                 IR_A_MAIN.putExtra("email",MAIL);
 
-                Toast datos_invalidos= Toast.makeText(this,"Ingreso éxitoso"
+                Toast datos_validos= Toast.makeText(this,"Ingreso éxitoso"
                         ,Toast.LENGTH_SHORT);
-                datos_invalidos.show();
+                datos_validos.show();
 
                 startActivity(IR_A_MAIN);
 
             }
+
+            else if (! usuario_ingresado.equals(USER))
+            {
+                Toast datos_invalidos= Toast.makeText(this,"Usuario Errado"
+                        ,Toast.LENGTH_SHORT);
+                datos_invalidos.show();
+            }
+
+            else
+            {
+                Toast datos_invalidos= Toast.makeText(this,"Contraseña Errada"
+                        ,Toast.LENGTH_SHORT);
+                datos_invalidos.show();
+            }
+        }
+
+        else if (usuario_ingresado.length()==0)
+        {
+            Toast datos_invalidos= Toast.makeText(this,"Usuario está vacío"
+                    ,Toast.LENGTH_SHORT);
+            datos_invalidos.show();
         }
 
         else
         {
-            Toast datos_invalidos= Toast.makeText(this,"Usuario o Contraseña Errada"
+            Toast datos_invalidos= Toast.makeText(this,"Contraseña está vacía"
                     ,Toast.LENGTH_SHORT);
             datos_invalidos.show();
         }
